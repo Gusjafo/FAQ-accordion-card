@@ -1,0 +1,13 @@
+body {
+  background-image: url("../images/bg-pattern-desktop.svg"),linear-gradient(180deg, #af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: -80% bottom;
+
+}
+
+
+.hola {
+  padding: 10% 20%;
+  background-color: #fff;
+}
