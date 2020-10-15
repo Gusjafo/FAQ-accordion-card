@@ -1,3 +1,4 @@
+
 body {
   background-image: linear-gradient(180deg, #af67e9, #6565e7);
   background-repeat: no-repeat;
@@ -9,8 +10,9 @@ body {
 
 
 .container {
-  display: block;
-  margin: 10% 18%;
+  /* box-sizing: border-box; */
+  display: table;
+  margin: 9% 18%;
   height: 500px;
   width: 66vw;
   background-color: #fff;
@@ -18,8 +20,10 @@ body {
 }
 
 .image-box {
-  position: absolute;
-  display: block;
+  /* position: absolute; */
+  float: left;
+  /* display: block; */
+  /* display: inline-flex; */
   background-image: url("../images/illustration-woman-online-desktop.svg"),url("../images/bg-pattern-desktop.svg");
   background-size: 440px, 950px;
   background-repeat: no-repeat;
@@ -38,15 +42,43 @@ body {
 }
 
 .text-box {
-  position: relative;
-  left: 360px;
+  /* position: relative; */
+  /* left: 360px; */
+  float: right;
   box-sizing: border-box;
   margin: 0;
-  padding: 60px 60px;
+  padding: 60px 60px 0 0;
   height: 100%;
-  width: 60%;
+  width: 50%;
+  /* width: 60%; */
 }
 
-.text-box input:checked {
-  content: string('You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.');
+.text-box h1 {
+  font-size: 3rem;
+}
+
+input {
+  display: none;
+}
+
+#btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 11px;
+  background-color: #ff7;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.expandable {
+  visibility: collapse;
+  background: #ddd;
+}
+
+input:checked ~ .expandable {
+  visibility: visible;
+}
+
+input:checked ~ #btn {
+  background-color: #ccc;
 }
