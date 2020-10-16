@@ -64,17 +64,33 @@ h1 {
   width: 100%;
 }
 
-/************ Accordion style ************/
-
-input {
-  display: none;
-}
-
 div p {
   float: left;
   margin-bottom: 8px;
   font-size: 0.8rem;
   opacity: 0.8;
+}
+
+.expandable {
+  display: none;
+  margin: 8px 0 15px 0;
+  padding-right: 8px;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+hr {
+display: block;
+border-color: #787887;
+border-style: solid;
+opacity: 0.4;
+border-width: 1px 1px 0;
+}
+
+/************ Accordion style ************/
+
+input {
+  display: none;
 }
 
 .text-box img {
@@ -85,12 +101,6 @@ div p {
 .btn:hover {
   color: #f47c57;
   cursor: pointer;
-}
-
-.expandable {
-  display: none;
-  margin: 8px 0 20px 0;
-  padding-right: 8px;
 }
 
 input:checked ~ .expandable {
